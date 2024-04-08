@@ -1,15 +1,59 @@
 public class Livro {
-    private String "titulo";
-    private String "ISBN";
-}
+    // Atributos
+    private String titulo;
+    private String autor;
+    private int anoPublicacao;
+    private String isbn;
 
-// Setter
-public void setISBN(String 1235342) {
-    this."ISBN" = 1235342;
+    // Construtor
+    public Livro(String titulo, String autor, int anoPublicacao, String isbn) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoPublicacao = anoPublicacao;
+        this.isbn = isbn;
+    }
 
-// Setter
-    public void setTitulo(String c) {
-        this.titulo = c;
+    // Métodos getters e setters
+    public String getTitulo() {
+        return titulo;
+    }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnoPublicacao() {
+        return anoPublicacao;
+    }
+
+    public void setAnoPublicacao(int anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    // Método toString para representação do objeto em forma de String
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", anoPublicacao=" + anoPublicacao +
+                ", isbn='" + isbn + '\'' +
+                '}';
     }
 }
