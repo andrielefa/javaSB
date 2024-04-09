@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Estante {
     private List<String> titulos;
     private List<Livro> livros;
