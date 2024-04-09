@@ -2,7 +2,6 @@ public class Livro
 {
   private String ISBN;
 
-
   private String titulo;
 
   private Autor autor; 
